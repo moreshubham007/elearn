@@ -1,0 +1,75 @@
+		html
+		{
+			background-color: #ffaa2b;
+		}
+		.box
+		{
+		  border-bottom-left-radius: 50px;
+		  border-top-right-radius: 50px;
+          background-color: white;
+          color: black;
+          font-weight: bold;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          padding: 100px;
+          text-align: center;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		input[type=text], select {
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  font-size: 20px;
+		  box-sizing: border-box;
+		}
+
+		input[type=password], select {
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  font-size: 20px;
+		  box-sizing: border-box;
+		}
+
+		button
+		{
+			padding: 20px;
+			border-radius: 10px;
+			border: none;
+			font-size: 20px;
+			background-color: #ff9900;
+			cursor: pointer;
+		}
+
+				button span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+
+		button span:after {
+		  content: '\00bb';
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.5s;
+		}
+
+		button:hover span {
+		  padding-right: 15px;
+		}
+
+		button:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		}
